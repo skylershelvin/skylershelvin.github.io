@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form class="register" onsubmit="confirmInput()" action="/index.html">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" title="Please enter a valid name (only alphabets and spaces are allowed)" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Please enter a valid email address"required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Register
+        </button>
+    </form>
+    <div>
+        <button class="home__btn">
+            <a href="/index.html"> Return Home</a>
+           
+        
+        </button>
+    </div>
+
+</body>
+</html>
